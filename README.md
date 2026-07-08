@@ -21,13 +21,7 @@ A real-time Personal Protective Equipment (PPE) compliance monitoring system bui
 
 ## Demo
 
-### Input Video
-
-(Add input screenshot or GIF here)
-
-### Output
-
-(Add annotated output screenshot or GIF here)
+![Output](assets/output.png)
 
 ---
 
