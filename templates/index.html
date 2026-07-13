@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PPE Compliance Monitor</title>
+
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>PPE Compliance Monitor</h1>
+
+            <p class="subtitle">
+                AI-powered detection of helmet and safety vest compliance
+                in construction site footage using YOLO object detection,
+                ByteTrack tracking and OpenCV.
+            </p>
+
+        </header>
+
+
+        <section class="upload-section">
+
+            <label for="videoInput" class="upload-label">
+
+                Select a Construction Video
+
+            </label>
+
+            <input
+                type="file"
+                id="videoInput"
+                accept=".mp4">
+
+            <button id="processButton">
+
+                Process Video
+
+            </button>
+
+            <div id="loading">
+
+                <div class="spinner"></div>
+
+                <p>Processing video...</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="output-section">
+
+            <h2>Processed Result</h2>
+
+            <video
+                id="resultVideo"
+                controls
+                preload="metadata">
+
+                Your browser does not support HTML5 video.
+
+            </video>
+
+            <button
+                id="downloadReportButton"
+
+                style="display:none;">
+
+                Download Complete Report
+
+            </button>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+
+                PPE Compliance Detection System
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

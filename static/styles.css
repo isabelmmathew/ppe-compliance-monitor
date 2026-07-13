@@ -1,0 +1,307 @@
+/* -----------------------------
+   Global
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #17181c;
+
+    color: #f3f3f3;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+
+}
+
+
+/* -----------------------------
+   Main Card
+------------------------------ */
+
+.container {
+
+    width: min(900px, 100%);
+
+    background: #23252b;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,.45);
+
+}
+
+
+/* -----------------------------
+   Header
+------------------------------ */
+
+header {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+header h1 {
+
+    font-size: 2.4rem;
+
+    color: #53a8ff;
+
+    margin-bottom: 15px;
+
+}
+
+.subtitle {
+
+    color: #c9c9c9;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+
+    margin: auto;
+
+}
+
+
+/* -----------------------------
+   Upload Section
+------------------------------ */
+
+.upload-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+
+}
+
+.upload-label {
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+
+input[type=file] {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    color: white;
+
+    background: #2c2f36;
+
+    border: 1px solid #444;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+}
+
+
+/* -----------------------------
+   Buttons
+------------------------------ */
+
+button {
+
+    background: #3b82f6;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 30px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+button:hover {
+
+    background: #2563eb;
+
+    transform: translateY(-2px);
+
+}
+
+button:disabled {
+
+    opacity: .6;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+
+/* -----------------------------
+   Loading
+------------------------------ */
+
+#loading {
+
+    display: none;
+
+    text-align: center;
+
+    margin-top: 10px;
+
+}
+
+.spinner {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: 5px solid #444;
+
+    border-top: 5px solid #3b82f6;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    animation: spin 0.8s linear infinite;
+
+}
+
+@keyframes spin {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+/* -----------------------------
+   Output
+------------------------------ */
+
+.output-section {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+}
+
+.output-section h2 {
+
+    margin-bottom: 25px;
+
+    color: #53a8ff;
+
+}
+
+
+#resultVideo {
+
+    display: none;
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    background: black;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.4);
+
+}
+
+
+#downloadButton {
+
+    display: none;
+
+}
+
+
+/* -----------------------------
+   Footer
+------------------------------ */
+
+footer {
+
+    margin-top: 45px;
+
+    text-align: center;
+
+    color: #8d8d8d;
+
+    font-size: .9rem;
+
+}
+
+
+/* -----------------------------
+   Responsive
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    .container {
+
+        padding: 25px;
+
+    }
+
+    header h1 {
+
+        font-size: 2rem;
+
+    }
+
+}
